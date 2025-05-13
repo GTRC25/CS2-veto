@@ -9,7 +9,8 @@ body {
 
 .container {
   max-width: 600px;
-  margin: auto;
+  margin: 20px;
+  height: 50px;
 }
 
 .map-grid {
@@ -66,11 +67,71 @@ body {
   border-radius: 4px;
   background-color: yellowgreen;
   transition: ease-in-out 0.4s;
+  color: black;
 }
 
-#startbtn{
+#startbtn {
   border-radius: 4px;
-  padding: 5px;
-  width: 50px;
+  padding: 10px 20px;
+  margin-top: 10px; /* Remove large margin */
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
+#B0btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Use positive value */
+  border-radius: 4px;
+}
+
+#B01{
+  padding: 3px;
+  width: 40px;
+  background-color: #444;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+#B03{
+  padding: 3px;
+  width: 40px;
+  background-color: #444;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+#B05{
+  padding: 3px;
+  width: 40px;
+  background-color: #444;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+#B01:hover{
+  border-radius: 4px;
+  background-color: yellowgreen;
+  transition: ease-in-out 0.4s;
+  color: black;
+}
+#B03:hover{
+  border-radius: 4px;
+  background-color: yellowgreen;
+  transition: ease-in-out 0.4s;
+  color: black;
+}
+#B05:hover{
+  border-radius: 4px;
+  background-color: yellowgreen;
+  transition: ease-in-out 0.4s;
+  color: black;
+  
+}
+  
+  
