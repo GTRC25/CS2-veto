@@ -1,16 +1,28 @@
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;             
+  display: flex;              
+  justify-content: center;    
+  align-items: center;       
   background-color: #121212;
   color: black;
-  text-align: center;
-  margin: 0;
+  font-family: Arial, sans-serif;
   padding: 20px;
+  text-align: center;
 }
 
 .container {
   max-width: 600px;
-  margin: 20px;
-  height: 50px;
+  width: 100%;
+  background-color: #222;    
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.h1 {
+  color: yellowgreen;
+  margin-bottom: 20px;
 }
 
 .map-grid {
@@ -20,17 +32,18 @@ body {
   margin: 20px 0;
 }
 
-.map {
+.mapdiv {
   padding: 20px;
-  background-color: #1e1e1e;
+  background-color: greenyellow;
   border: 2px solid #444;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 10px;
 }
 
-.map:hover {
+.mapdiv:hover {
   background-color: #333;
+  color: white;
 }
 
 .banned {
@@ -42,6 +55,7 @@ body {
 .picked {
   background-color: #006400;
   cursor: not-allowed;
+  color: white;
 }
 
 #turnInfo {
@@ -55,25 +69,10 @@ body {
   font-weight: bold;
 }
 
-.hidden {
-  display: none;
-}
-
-.h1 {
-  color: yellowgreen;
-}
-
-#startbtn:hover {
-  border-radius: 4px;
-  background-color: yellowgreen;
-  transition: ease-in-out 0.4s;
-  color: black;
-}
-
 #startbtn {
   border-radius: 4px;
   padding: 10px 20px;
-  margin-top: 10px; /* Remove large margin */
+  margin-top: 10px;
   cursor: pointer;
   background-color: #444;
   color: white;
@@ -81,57 +80,35 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
+#startbtn:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
 #B0btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* Use positive value */
-  border-radius: 4px;
+  gap: 20px;
+  margin-top: 10px;
 }
 
-#B01{
+#B0btn button {
   padding: 3px;
   width: 40px;
   background-color: #444;
   border: none;
   border-radius: 4px;
   color: white;
-}
-#B03{
-  padding: 3px;
-  width: 40px;
-  background-color: #444;
-  border: none;
-  border-radius: 4px;
-  color: white;
-}
-#B05{
-  padding: 3px;
-  width: 40px;
-  background-color: #444;
-  border: none;
-  border-radius: 4px;
-  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
 }
 
-#B01:hover{
-  border-radius: 4px;
+#B0btn button:hover {
   background-color: yellowgreen;
-  transition: ease-in-out 0.4s;
   color: black;
 }
-#B03:hover{
-  border-radius: 4px;
-  background-color: yellowgreen;
-  transition: ease-in-out 0.4s;
-  color: black;
+
+.hidden{
+  display: none;
 }
-#B05:hover{
-  border-radius: 4px;
-  background-color: yellowgreen;
-  transition: ease-in-out 0.4s;
-  color: black;
-  
-}
-  
-  

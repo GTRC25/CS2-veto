@@ -6,9 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const B05 = document.getElementById("B05");
 
   const maps = ["Mirage", "Inferno", "Nuke", "Overpass", "Ancient", "Anubis", "Vertigo"];
-  const steps = [
-    
-  ];
+ 
 
   let currentStep = 0;
   let b03Clicked = false; 
@@ -53,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       maps.forEach(name => {
         const div = document.createElement("div");
-        div.className = "map";
+        div.className = "mapdiv";
         div.textContent = name;
 
         div.addEventListener("click", () => {
@@ -70,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           if (currentStep === 6) {
-            const remaining = Array.from(document.querySelectorAll(".map"))
+            const remaining = Array.from(document.querySelectorAll(".mapdiv"))
               .find(m => !m.classList.contains("banned") && !m.classList.contains("picked"));
             if (remaining) {
               remaining.classList.add("picked");
@@ -89,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       maps.forEach(name => {
         const div = document.createElement("div");
-        div.className = "map";
+        div.className = "mapdiv";
         div.textContent = name;
 
         div.addEventListener("click", () => {
@@ -106,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           if (currentStep === 6) {
-            const remaining = Array.from(document.querySelectorAll(".map"))
+            const remaining = Array.from(document.querySelectorAll(".mapdiv"))
               .find(m => !m.classList.contains("banned") && !m.classList.contains("picked"));
             if (remaining) {
               remaining.classList.add("picked");
@@ -125,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       maps.forEach(name => {
         const div = document.createElement("div");
-        div.className = "map";
+        div.className = "mapdiv";
         div.textContent = name;
 
         div.addEventListener("click", () => {
@@ -142,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           if (currentStep === 6) {
-            const remaining = Array.from(document.querySelectorAll(".map"))
+            const remaining = Array.from(document.querySelectorAll(".mapdiv"))
               .find(m => !m.classList.contains("banned") && !m.classList.contains("picked"));
             if (remaining) {
               remaining.classList.add("picked");
